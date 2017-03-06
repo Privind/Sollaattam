@@ -1,0 +1,27 @@
+{
+	"Game_Title" : "சொல்லாட்டம்",
+	"Game_Types" : [
+        {
+            "Label" : "சொல் தேடல்",
+            "Key" : "Word_Search"
+        },
+        {
+            "Label" : "குறுக்கெழுத்து",
+            "Key" : "Cross_Word"
+        },
+        {
+            "Label" : "சொற்புதிர்",
+            "Key" : "Word_Quiz"
+        },
+        {
+            "Label" : "சொல் யூகம்",
+            "Key" : "Word_Guess"
+        }
+    ],
+    "Help_Label" : "உதவி",
+    "Exit_Label" : "வெளியேறு",
+    "Easy_Label" : "சுலபம்",
+    "Medium_Label" : "நடுத்தரம்",
+    "Hard_Label" : "கடினம்",
+    "Level_Label" : "நிலை"
+}

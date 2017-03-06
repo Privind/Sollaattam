@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
+	<title>Phaser Template</title>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('deviceready', function() 
+            console.log("Cordova is initialized and ready!");
+        }, false);
+    </script>    
+	<script type="text/javascript" src="js/game.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+    <script type="text/javascript">
+		(function() {
+				//Create a new game that fills the screen
+				game = new Phaser.Game(window.screen.innerWidth, window.screen.innerHeight, Phaser.CANVAS);
+
+				//Add all states
+				game.state.add("Boot", Boot);
+				game.state.add("Preload", Preload);
+                game.state.add("LevelManager", LevelManager);
+                game.state.add("MenuManager", MenuManager);
+				game.state.add("GameTitle", GameTitle);
+				game.state.add("Main", Main);
+				game.state.add("GameOver", GameOver);
+
+				//Start the first state
+				game.state.start("Boot");
+
+		})();
+    </script>
+</head>
+<body>
+</body>
+</html>
